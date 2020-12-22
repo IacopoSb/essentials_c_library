@@ -3,22 +3,26 @@
 #ifndef ELEMENT_H
 #define ELEMENT_H
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
 
 //DEFINIZIONE
 #define TYPEOFELEMENTFORFUNCTION "%f"
 typedef float element; 
 
-//rimuovi il commento se element è una stringa
+typedef enum { false, true } Boolean;
+
+//se element non è una struttura si possono usare le funzioni sottostanti de-commentandole, altrimenti è necessario ricrearle ad hoc
+//vengono usate in alcune funzioni lista non primitive e negli ordinamenti
+
+
+
+//se typedef è una stringa, rimuovi il commento per usare le funzioni sottostanti per stringhe
 
 //#define ISITSTRING
 
-typedef enum { false, true } Boolean;
-
-Boolean isLess(element, element);
-Boolean isEqual(element, element);
+/*
+Boolean isLess(element a, element b);				//true se a<b, false altrimenti	
+Boolean isEqual(element a, element b);				//true se a=b, false altrimentu
 element getElement(void);
 void printElement(element);
+*/
 #endif

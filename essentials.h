@@ -6,9 +6,9 @@
 #include<stdlib.h>
 #include<math.h>
 #include<string.h>
-#include"element.h"
-#include"list.h"
 
+//funzioni comunemente usate NON fondamentali
 void fatalError(char * message);
+char readField(char buffer[], char sep, FILE* f);
 
 #endif
