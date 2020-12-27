@@ -91,7 +91,7 @@ void freeList(list l) {
 	if (isEmptyList(l))
 		return;
 	else {
-		freelist(tail(l));
+		freeList(tail(l));
 		free(l);
 	}
 	return;
