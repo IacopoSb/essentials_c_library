@@ -33,7 +33,7 @@ void scanfStringBetweenSymbols(char buffer[], int dimension, char symbol){		//le
 		i++;
 		ch = getchar(); 
 	} 
-	nomeCliente[i] = '\0';
+	buffer[i] = '\0';
 	return;
 }
 
@@ -41,6 +41,6 @@ void readFileUntil(char sep, FILE* f){					//salta tutti i caratteri da un file 
 	char ch;
 	do{
 		ch = fgetc(f);
-	} while (ch!=symbol);
+	} while (ch!=sep);
 	return;
 }
