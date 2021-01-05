@@ -27,7 +27,7 @@ list cons(element e, list l)
 	t->next = l;
 	return(t);
 }
-													//NON PRIMITIVE, DA RIELABORARE SE ELEMENT E' STRUCT!!
+/*													NON PRIMITIVE, DA RIELABORARE SE ELEMENT E' STRUCT!!
 void showList(list l) {
 	printf("[");
 	while (!isEmptyList(l)) {
@@ -86,7 +86,7 @@ list insord(element el, list l) {
 	else if (isLess(el,head(l)) || isEqual(el,head(l))) return cons(el, l);
 	else return cons(head(l), insord(el, tail(l)));
 }
-
+*/
 void freeList(list l) {
 	if (isEmptyList(l))
 		return;
